@@ -13,7 +13,7 @@ int main() {
     cout << "Niz b:\n";
     float b[n];
     for(int i = 0; i < n; i++) {
-        if(a[i] != 1) {
+        if(a[i] != 1) { //Compiler nece raditi ako upisemo jedan zato sto ce dijeliti sa nulom.
             b[i] = a[i] / (a[i] - 1);
             cout << b[i] << '\n';
         }

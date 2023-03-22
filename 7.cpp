@@ -5,10 +5,10 @@ using namespace std;
 
 int main() {
     int n;
-    cout << "Enter array size: ";
+    cout << "Velicina niza?\n";
     cin >> n;
     int a[n], s[n];
-    cout << "Enter array elements: ";
+    cout << "Unesi elemente niza!\n";
     for(int i = 0; i < n; i++) {
         cin >> a[i];
     }

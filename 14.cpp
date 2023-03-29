@@ -1,8 +1,24 @@
 #include <iostream>
 using namespace std;
 
+void provjera(int n) {
+    int niz[n];
+    cout << "Unesite elemente niza!\n";
+    for(int i = 0; i < n; i++) {
+        cin >> niz[i];
+    }
+    for(int i = 0; i < n; i++) {
+        if(niz[i] + 1 != niz[i] && niz[i] - 1 != niz[i]) {
+            cout << niz[i] << " razlicit je susjedan!\n";
+        }
+    }
+}
+
 int main() {
-    
+    int n;
+    cout << "Velicina niza?\n";
+    cin >> n;
+    provjera(n);
     return 0;
 }
 /*
